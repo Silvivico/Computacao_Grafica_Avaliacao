@@ -47,6 +47,17 @@ def controlar_individual(tecla, cubo, triangulo, piramide):
     elif tecla == 'N':
         triangulo.x += 0.1
 
+    if tecla == 'UP':
+        piramide.y += 0.1
+    elif tecla == 'DOWN':
+        piramide.y -= 0.1
+    elif tecla == 'LEFT':
+        piramide.x -= 0.1
+    elif tecla == 'RIGHT':
+        piramide.x += 0.1
+
+    
+
     # Pirâmide (setas ↑ ↓ ← →)
     elif tecla == b'\xe0':  # Tecla especial (seta)
         pass  # O tratamento exato da tecla depende do sistema
